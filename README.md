@@ -2,8 +2,8 @@
 
 **Desafíos construidos** 🚀
 
-> ### Project Lists
+> ### Lista de proyectos
 
-|  N°  | Project Name                                                                                                                                      |
+|  N°  | Nombre de Proyecto                                                                                                                                      |
 | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1    | [Stats preview card component](./Stats%20preview%20card%20component)                                                                              |
