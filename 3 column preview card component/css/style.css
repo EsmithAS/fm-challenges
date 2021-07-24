@@ -39,7 +39,6 @@ main {
     flex: 1 0 326px;
     min-height: 442px;
     padding: 48px;
-    filter: contrast(1.2);
     display: inline-block;
 }
 .card__icon {
@@ -62,7 +61,6 @@ main {
     color: var(--transparent-white);
     letter-spacing: 0.5px;
     word-spacing: 1px;
-    opacity: .75;
 }
 .card__btn {
     width: 148px;

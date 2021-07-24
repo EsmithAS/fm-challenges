@@ -18,7 +18,7 @@ Los usuarios deben ser capaces de:
 
 ### Enlaces
 
-- [URL Solución](https://www.frontendmentor.io/solutions/stats-preview-card-component-3OzThv6t_)
+- [URL Solución](https://www.frontendmentor.io/solutions/3column-preview-card-component-C1QVcGrir)
 - [URL del sitio en vivo](https://fm-3columnpreviewcardcomponent.netlify.app/)
 
 ## Mi proceso
