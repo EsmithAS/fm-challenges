@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --light-gray: hsl(0, 0%, 95%);
+
+    --font-Shoulders: 'Big Shoulders Display', cursive;
+    --font-Lexend: 'Lexend Deca', sans-serif;
+}
+
+body {
+    font-size: 15px;
+    background-color: var(--light-gray);
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.content {
+    max-width: 326px;
+    margin: 88px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 0 326px;
+    min-height: 442px;
+    padding: 48px;
+    filter: contrast(1.2);
+    display: inline-block;
+}
+@media screen and (min-width:650px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .content {
+        max-width: 450px;
+    }
+}
+@media screen and (min-width:950px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .content {
+        max-width: 921px;
+        margin: 0;
+    }
+    .card {
+        flex: 1 0 307px;
+    }
+    .card__description {
+        min-height: 170px;
+    }
+}
+.card__icon {
+    width: 100%;
+}
+.card__icon img {
+    height: 40px;
+}
+.card__title {
+    font-family: var(--font-Shoulders);
+    font-size: 34px;
+    text-transform: uppercase;
+    color: var(--light-gray);
+    padding: 39px 0;
+}
+.card__description {
+    font-family: var(--font-Lexend);
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--transparent-white);
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+    opacity: .75;
+}
+.card__btn {
+    width: 148px;
+    height: 48px;
+    font-family: var(--font-Lexend);
+    font-size: 12px;
+    margin-top: 25px;
+    background-color: var(--light-gray);
+    border: 2px solid var(--light-gray);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: .3s;
+    letter-spacing: 0.5px;
+}
+
+.card--orange {
+    background-color: var(--orange);
+}
+.card--dark-cyan {
+    background-color: var(--dark-cyan);
+}
+.card--very-dark-cyan {
+    background-color: var(--very-dark-cyan);
+}
+.card--orange .card__btn {
+    color: var(--orange);
+}
+.card--dark-cyan .card__btn {
+    color: var(--dark-cyan);
+}
+.card--very-dark-cyan .card__btn {
+    color: var(--very-dark-cyan);
+}
+.card__btn:hover {
+    color: #fff;
+    background-color: transparent;
+}
