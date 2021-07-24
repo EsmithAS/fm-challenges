@@ -42,33 +42,6 @@ main {
     filter: contrast(1.2);
     display: inline-block;
 }
-@media screen and (min-width:650px) {
-    main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .content {
-        max-width: 450px;
-    }
-}
-@media screen and (min-width:950px) {
-    main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .content {
-        max-width: 921px;
-        margin: 0;
-    }
-    .card {
-        flex: 1 0 307px;
-    }
-    .card__description {
-        min-height: 170px;
-    }
-}
 .card__icon {
     width: 100%;
 }
@@ -126,4 +99,32 @@ main {
 .card__btn:hover {
     color: #fff;
     background-color: transparent;
+}
+
+@media screen and (min-width:650px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .content {
+        max-width: 450px;
+    }
+}
+@media screen and (min-width:950px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .content {
+        max-width: 921px;
+        margin: 0;
+    }
+    .card {
+        flex: 1 0 307px;
+    }
+    .card__description {
+        min-height: 170px;
+    }
 }
