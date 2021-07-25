@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 :root {
-    --darkcyan: hsl(185, 75%, 39%);
+    --dark-cyan: hsl(185, 75%, 39%);
     --very-dark-desaturated-blue: hsl(229, 23%, 23%);
     --dark-grayish-blue: hsl(227, 10%, 46%);
 
@@ -14,8 +14,150 @@
 }
 body {
     font-size: 18px;
+    font-family: var(--font-Kumbh);
 }
 main {
     width: 100%;
+    height: 100vh;
     min-height: 100vh;
+    background-color: var(--dark-cyan);
+    overflow: hidden;
+}
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.circle {
+    width: 410px;
+    position: absolute;
+    z-index: 0;
+}
+.circle--top {
+    top: -35%;
+    left: -50%;
+}
+.circle--bottom {
+    bottom: -35%;
+    right: -50%;
+}
+
+.card {
+    max-width: 325px;
+    min-height: 373px;
+    background-color: #fff;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: 0 15px 150px hsla(229, 23%, 23%,.5);
+}
+.card__header {
+    width: 100%;
+    height: 140px;
+}
+.card__bg-header {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.card__body {
+    width: 100%;
+    min-height: 145px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.card__img-perfil {
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    position: absolute;
+    top: -52px;
+}
+.card__info {
+    min-height: 97px;
+    padding: 28px 0;
+    margin-top: 52px;
+}
+.card_name {
+    
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--very-dark-desaturated-blue);
+    word-spacing: 1px;
+    text-align: center;
+}
+.card__year {
+    font-weight: 400;
+    color: var(--dark-gray);
+}
+.card__city {
+    font-weight: 400;
+    font-size: .9rem;
+    color: var(--dark-grayish-blue);
+    text-align: center;
+    margin-top: 17px;
+}
+.card__footer {
+    padding: 29px 0 27px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-top: 1px ridge hsla(0, 0%, 59%, .5);
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item__num {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--very-dark-desaturated-blue);
+}
+.item__description {
+    font-weight: 400;
+    font-size: .65rem;
+    color: var(--dark-grayish-blue);
+    letter-spacing: 2px;
+    margin-top: 11px;
+}
+
+@media screen and (min-width: 575px) {
+    .card {
+        max-width: 350px;
+    }
+    .circle {
+        width: 65%;
+    }
+    .circle--top {
+        top: -200px;
+        left: -100px;
+    }
+    .circle--bottom {
+        bottom: -200px;
+        right: -100px;
+    }
+}
+@media screen and (min-width: 1005px)  {
+    .circle {
+        width: 65%;
+        position: absolute;
+        z-index: 0;
+    }
+    .circle--top {
+        top: -500px;
+        left: -250px;
+    }
+    .circle--bottom {
+        bottom: -500px;
+        right: -250px;
+    }
 }
